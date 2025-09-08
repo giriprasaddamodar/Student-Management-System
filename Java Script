@@ -1,0 +1,73 @@
+1. Show/Hide Navigation Menu (Responsive Navbar)
+<!-- HTML -->
+<button onclick="toggleMenu()">☰ Menu</button>
+<nav id="navMenu" style="display:none;">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- JS -->
+<script>
+  function toggleMenu() {
+    let menu = document.getElementById("navMenu");
+    if (menu.style.display === "none") {
+      menu.style.display = "block";
+    } else {
+      menu.style.display = "none";
+    }
+  }
+</script>
+
+2. Contact Form Validation (Frontend before Java handles backend)
+<form onsubmit="return validateForm()">
+  <input type="text" id="name" placeholder="Your Name"><br>
+  <input type="email" id="email" placeholder="Your Email"><br>
+  <textarea id="message" placeholder="Your Message"></textarea><br>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if (name === "" || email === "" || message === "") {
+      alert("All fields are required!");
+      return false; // stops form from submitting
+    }
+    return true; // allows submit
+  }
+</script>
+
+3. Display Skills Dynamically
+<ul id="skillsList"></ul>
+
+<script>
+  let skills = ["Java", "SQL", "HTML", "CSS", "JavaScript"];
+  let skillsList = document.getElementById("skillsList");
+
+  skills.forEach(function(skill) {
+    let li = document.createElement("li");
+    li.textContent = skill;
+    skillsList.appendChild(li);
+  });
+</script>
+
+4. Typing Animation (for intro heading)
+<h2 id="intro"></h2>
+
+<script>
+  let text = "Hi, I'm Giri — Full Stack Developer!";
+  let i = 0;
+
+  function typingEffect() {
+    if (i < text.length) {
+      document.getElementById("intro").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typingEffect, 100); // typing speed
+    }
+  }
+  typingEffect();
+</script>
