@@ -1,4 +1,4 @@
-# Student-Management-System
+# Portfolio Website
 📂 Features
 
 Home Page – Your name, short intro, profile photo.
