@@ -1,0 +1,98 @@
+index.html (Home Page)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm Giri 👋</h1>
+        <p>Aspiring Java Full Stack Developer | SQL | Power BI | Selenium | IoT</p>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>
+
+about.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+</head>
+<body>
+    <h2>About Me</h2>
+    <p>I recently completed my B.E. in ECE. Skilled in Java, SQL, Power BI, Selenium, and IoT.</p>
+    <h3>Skills</h3>
+    <ul>
+        <li>Java, SQL</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Power BI, Selenium, IoT</li>
+    </ul>
+</body>
+</html>
+
+
+projects.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+</head>
+<body>
+    <h2>My Projects</h2>
+    <ul>
+        <li>✅ Student Management System (Java + SQL)</li>
+        <li>✅ Sales & Inventory Tracker (Java + SQL + Power BI)</li>
+        <li>✅ IoT Home Automation (Arduino + MySQL + Java)</li>
+        <li>✅ E-Commerce Checkout Testing (Selenium + JIRA)</li>
+    </ul>
+</body>
+</html>
+
+contact.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+</head>
+<body>
+    <h2>Contact Me</h2>
+    <form action="ContactServlet" method="post">
+        Name: <input type="text" name="name" required><br>
+        Email: <input type="email" name="email" required><br>
+        Message: <textarea name="message" required></textarea><br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
+
+style.css (Basic Design)
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    text-align: center;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+h2 {
+    color: #333;
+}
+
+
